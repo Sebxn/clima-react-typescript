@@ -1,54 +1,23 @@
-# React + TypeScript + Vite
+# 🌤️ Weather App - Aplicación de Clima en Tiempo Real
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación de clima moderna que muestra condiciones meteorológicas en tiempo real utilizando una API externa. Desarrollada con React, TypeScript y un enfoque en la experiencia de usuario.
 
-Currently, two official plugins are available:
+## 🌟 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Puedes ver la aplicación en vivo aquí:  
+👉 [https://lovely-crumble-41a911.netlify.app](https://lovely-crumble-41a911.netlify.app)
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías Utilizadas
+| Categoría       | Tecnologías                                                                 |
+|-----------------|-----------------------------------------------------------------------------|
+| Frontend        | ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react) ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript) ![Vite](https://img.shields.io/badge/Vite-B73BFE?style=flat&logo=vite) |
+| Estilos         | ![CSS Modules](https://img.shields.io/badge/CSS_Modules-000000?style=flat)  |
+| Validación      | ![Valibot](https://img.shields.io/badge/Valibot-4F46E5?style=flat)          |
+| HTTP Client     | ![Axios](https://img.shields.io/badge/Axios-5A29E4?style=flat&logo=axios)   |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## ✨ Características Principales
+- ✅ Clima actual
+- 🔍 Búsqueda por ciudad/ubicación
+- 📱 Diseño con CSS Module
+- 🛠️ Validación de formularios con Valibot
+- ⚡ Carga rápida con Vite
