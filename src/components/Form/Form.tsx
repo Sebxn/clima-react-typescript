@@ -62,7 +62,7 @@ export const Form = ({fetchWeather} : FormProps) => {
                     {countries.map(country => (
                         <option 
                             key={country.code}
-                            value={country.name}
+                            value={country.code}
                         >{country.name}</option>
                     ))}
                 </select>
